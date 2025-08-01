@@ -1,0 +1,54 @@
+name: xiaobeike_music_player
+description: 香槟音乐播放器 - 跨平台移动音乐应用
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # 状态管理
+  provider: ^6.0.5
+  
+  # 网络请求
+  http: ^0.13.5
+  
+  # 音频播放 - 暂时移除以避免NDK依赖问题
+  # 音频播放
+  # 音频播放
+  just_audio: ^0.9.34
+  
+  # 图片缓存
+  cached_network_image: ^3.2.3
+  
+  # UI图标
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  
+  # 添加资源文件
+  assets:
+    - assets/images/
+    - assets/images/logo_blue.svg
+
+# 应用图标配置
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon_blue.png"
+  adaptive_icon_background: "#3B82F6"
+  adaptive_icon_foreground: "assets/images/app_icon_blue.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true

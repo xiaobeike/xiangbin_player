@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">freetyst.nf.migu.cn</domain>
+        <domain includeSubdomains="true">migu.cn</domain>
+        <domain includeSubdomains="true">musicapp.migu.cn</domain>
+        <domain includeSubdomains="true">api.yyy001.com</domain>
+        <domain includeSubdomains="true">soundjay.com</domain>
+    </domain-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system"/>
+        </trust-anchors>
+    </base-config>
+</network-security-config>
